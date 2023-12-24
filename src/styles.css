@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: hsl(200, 15%, 8%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0 0 4px hsl(209, 23%, 22%);
+  padding: 0 5vw;
+}
+
+#where-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#dark-mode {
+  display: flex;
+}
+
+#dark-mode-img {
+  height: 15px;
+  width: 15px;
+}
+
+#dark-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30vw;
+  height: 7vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px hsl(209, 23%, 22%);
+}
+
+#search-img {
+  height: 20px;
+  width: 20px;
+}
+
+#search {
+  width: 25vw;
+  height: 6vh;
+  border: none;
+}
+
+#search:focus {
+  outline: none;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 7vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 2px hsl(209, 23%, 22%);
+}
+
+.dropdown select {
+  width: 180px;
+  height: 5vh;
+  border: none;
+}
+
+.dropdown select:focus {
+  outline: none;
+}
+
+.main-content {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country-card {
+  margin: 35px;
+  border-radius: 10px;
+  width: 270px;
+  height: 340px;
+  line-height: 2rem;
+  background-color: white;
+}
+
+img {
+  height: 150px;
+  width: 270px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.country-description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.country-name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+span {
+  font-weight: 600;
+}
+
+/* darkmode for background */
+
+body.dark-mode-background {
+  background-color: hsl(207, 26%, 17%);
+}
+
+/* darkmode for elements */
+#header.dark-mode,
+.search-container.dark-mode,
+#search.dark-mode,
+#search.dark-mode::placeholder,
+#regionSelect.dark-mode,
+.dropdown.dark-mode,
+.country-card.dark-mode {
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+}
+
+/* for svgs in darkmode  */
+#search-img.dark-mode path {
+  fill: white;
+}
+
+/* mobile view  */
+
+@media only screen and (max-width: 767px) {
+  #where-heading {
+    font-size: 18px;
+  }
+
+  .search-container {
+    width: 90vw;
+    margin-bottom: 30px;
+  }
+
+  #search {
+    width: 70vw;
+  }
+}
