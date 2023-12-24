@@ -95,6 +95,7 @@ body {
   width: 180px;
   height: 5vh;
   border: none;
+  background-color: white;
 }
 
 .dropdown select:focus {
