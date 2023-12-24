@@ -141,8 +141,8 @@ function darkMode() {
   document.querySelector('#search-img').src = document
     .querySelector('#search-img')
     .classList.contains('dark-mode')
-    ? '../icons/search-dark.svg'
-    : '../icons/search-outline.svg';
+    ? './icons/search-dark.svg'
+    : './icons/search-outline.svg';
 
   document
     .querySelector('#dark-mode-img')
@@ -150,6 +150,6 @@ function darkMode() {
   document.querySelector('#dark-mode-img').src = document
     .querySelector('#dark-mode-img')
     .classList.contains('dark-mode')
-    ? '../icons/moon-dark.svg'
-    : '../icons/moon-outline.svg';
+    ? './icons/moon-dark.svg'
+    : './icons/moon-outline.svg';
 }
