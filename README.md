@@ -11,7 +11,7 @@ Welcome to rest-countries! This project is a web application built using HTML, C
    2. **Navigate to the project directory**
    
       ```bash
-      cd HTML-CSS-Javascript-Countries.
+      cd rest-countries.
 
 ### Development
 
